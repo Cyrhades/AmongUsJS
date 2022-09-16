@@ -6,6 +6,10 @@ export default class Gamepad {
         window.addEventListener("gamepadconnected", (e) => {
             this.gp = navigator.getGamepads()[0]; // Get the first gamepad object
         });
+
+        window.addEventListener("gamepaddisconnected", (e) => {
+            this.gp = null;
+        });
     }
 
     listen() {

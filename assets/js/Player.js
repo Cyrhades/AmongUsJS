@@ -36,7 +36,7 @@ export default class Player {
 
     playerMove(move) {
         this.moveCountModulo++;               
-        if(this.moveCountModulo%3 == 0) this.changeImage((move.length != 0));
+        if(this.moveCountModulo%2 == 0) this.changeImage((move.length != 0));
         if(move.indexOf('ArrowUp') !== -1) { this.position.y -= 5; }
         if(move.indexOf('ArrowDown') !== -1) { this.position.y += 5; }
         if(move.indexOf('ArrowLeft') !== -1) { this.position.scale.x = -1; this.position.x -= 5; }

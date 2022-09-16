@@ -1,9 +1,7 @@
 export default class Keyboard {
     constructor() {
         this.touchPressed = [];
-        this.listen();
     }
-
 
     listen() {
         // quand on presse une touche
